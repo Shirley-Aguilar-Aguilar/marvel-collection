@@ -1,0 +1,34 @@
+<div class ="loginContainer">
+
+
+  <div class ="formContainer">
+      <div class="logoContainer">
+      </div>
+      <h1>Sign In</h1>
+      <form class ="form"  novalidate   (ngSubmit)="save($event)">
+          <div >
+              <mat-form-field >
+                <mat-label style="color:black;font-family: 'Alfa Slab One'; ">Email</mat-label>
+                <input name="email" matInput placeholder="user@example.com" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+          </div>
+
+          <div >
+              <mat-form-field >
+                  <mat-label style="color:black;font-family: 'Alfa Slab One';">Password</mat-label>
+                  <input name="password" matInput [type]="hide ? 'password' : 'text'"  autocomplete="on" [formControl]="password">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </mat-form-field>
+          </div>
+          <button class="buttonSent" type="submit">Ingresar</button>
+          <button class="buttonSent" type="button">Limpiar</button>
+
+      </form>
+  </div>
+
+
+</div>
+

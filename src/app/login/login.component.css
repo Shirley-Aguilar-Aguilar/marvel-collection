@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.loginContainer{
+  background: url("../../assets/fondo.jpg")  no-repeat center center;
+  background-size: cover;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.logoContainer{
+  background: url("../../assets/logomarvel.jpg")  no-repeat center center;
+  background-size: cover;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  background-color: black;
+  margin:0% auto;
+}
+
+.formContainer{
+    background-color: rgba(238, 234, 234, 0.911);
+    position: absolute;
+    padding: 50px;
+    border-radius: 20px;
+    border:3px solid rgb(14, 13, 13);
+    box-shadow:3px 3px 3px 3px rgb(114, 33, 33);
+    text-align: center;
+    font-family: 'Alfa Slab One';
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+.buttonSent{
+ border:0;
+ background-color: rgba(20, 19, 19, 0.89);
+ color:white;
+ border-radius: 10px;
+ padding: 10px;
+ margin:10px;
+ font-size: medium;
+ font-family: 'Alfa Slab One';
+}
+
