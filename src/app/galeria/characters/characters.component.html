@@ -1,0 +1,15 @@
+<p>characters works!</p>
+<p>comics works!</p>
+<div class = "containerAllCharacters" >
+
+  <section class = "containerCharacters" *ngFor="let character of arrayCharacters">
+    <p>{{character.name}}</p>
+    <img class="imageCharacter" src="{{character.thumbnail.path}}.jpg{{credential}}">
+    <div *ngFor="let url of character.urls" >
+      <a class="urls" href="{{url.url}}">{{url.type}}</a>
+    </div>
+
+  </section>
+
+</div>
+

@@ -1,0 +1,22 @@
+.containerAllSeries {
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerSerie{
+  background-color: rgba(255, 255, 255, 0.922);
+  width:25%;
+  margin:3%;
+  font-family: 'Alfa Slab One';
+  text-align: center;
+
+}
+.urls{
+  text-decoration: none;
+  color:rgb(97, 97, 97)
+}
+.containerSerie img{
+  width: 80%;
+ }

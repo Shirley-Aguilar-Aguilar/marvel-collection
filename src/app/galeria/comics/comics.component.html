@@ -1,0 +1,9 @@
+<div class = "containerAllComics" >
+  <section class = "containerComic" *ngFor="let comic of arrayComics">
+    <p>{{comic.title}}</p>
+    <img class="imageCharacter" src="{{comic.thumbnail.path}}.jpg{{credential}}">
+    <div *ngFor="let url of comic.urls" >
+      <a class="urls" href="{{url.url}}">{{url.type}}</a>
+    </div>
+  </section>
+</div>
