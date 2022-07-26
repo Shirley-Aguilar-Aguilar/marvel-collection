@@ -1,0 +1,42 @@
+mat-toolbar h1{
+  color:rgba(230, 8, 8, 0.938);
+  width:100%;
+  text-align: center;
+  font-family: 'Alfa Slab One';
+  font-size: 25px;
+
+}
+mat-toolbar{
+  margin:0px;
+  padding: 0;
+  border:0;
+  background-color: black;
+}
+.navigation{
+  margin:0px;
+  padding: 0;
+  border:0;
+  background-color: white;
+  font-family: 'Alfa Slab One';
+}
+nav ul li {
+  display: inline;
+  margin:10px;
+}
+nav ul li a:hover {
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:black;
+  padding:10px;
+}
+.container-content{
+  background: url("../../assets/fondo.jpg")  no-repeat center center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+}
