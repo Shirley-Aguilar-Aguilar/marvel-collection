@@ -6,6 +6,7 @@
   width:100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content:center;
   align-items: center;
 }
@@ -21,7 +22,7 @@
 
 .formContainer{
     background-color: rgba(238, 234, 234, 0.911);
-    position: absolute;
+    position: relative;
     padding: 50px;
     border-radius: 20px;
     border:3px solid rgb(14, 13, 13);
@@ -46,3 +47,22 @@ input.example-right-align::-webkit-inner-spin-button {
  font-family: 'Alfa Slab One';
 }
 
+.buttonBack{
+  color:black;
+  background-color: white;
+  font-size: larger;
+  font-family: 'Alfa Slab One';
+  margin:10%;
+  border-radius: 10px;
+  padding:7px 10px;
+}
+.registerContainer{
+  display:flex;
+  flex-direction: column;
+}
+
+@media (min-width:1000px){
+  .buttonBack{
+    font-size: 25px;
+  }
+}

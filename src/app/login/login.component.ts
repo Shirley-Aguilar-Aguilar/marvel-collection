@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { RestService } from '../rest.service';
+import { RestService } from '../shared/services/rest.service';
+/* import { UserService } from '../shared/services/user.service'; */
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
   hide = true;
   constructor(
     private router: Router,
-    private RestService: RestService,) { }
+    private RestService: RestService,
+   ) { }
 
   ngOnInit(): void {
   }
@@ -39,33 +41,17 @@ export class LoginComponent implements OnInit {
       }
     }
 
-      // authenticación -usando POST AUTH  de la api rest
-/*   public postAuthenticated(email:string, password:string){
-    this.RestService.login(email, password)
-    .subscribe({
-      next: data: => {
-        sessionStorage.setItem('token',  JSON.stringify(data.accessToken));
-        sessionStorage.setItem('name',  JSON.stringify(data.name).replace(/['"]+/g, ''));
-        sessionStorage.setItem('userId', JSON.stringify(data.id));
-        this.getUser(parseInt(JSON.stringify(data.id)))
-        this.router.navigate(['/body']);
-      },
-      error: error => {
-        console.log(JSON.stringify(error));
-        console.log(JSON.stringify(error.error.message));
-      }
-    })
-
-  }
-
-  public getUser(id:number){
-    this.RestService.getUserById(id)
-    .subscribe({
-      next: data => {
-        console.log("data de usuario entrante")
-        sessionStorage.setItem('rol',  JSON.stringify(data.userrol.name).replace(/['"]+/g, ''));
-      },
-    })
-  } */
+/*     public postAuthenticated = (email:string, password:string):void => {
+      this.UserService.login(email, password)
+      .subscribe({
+        next: data => {
+          sessionStorage.setItem('token',  JSON.stringify(data.accessToken).replace(/['"]+/g, '')),
+          this.router.navigate(['/gallery']);
+        },
+        error: error => {
+          console.log(JSON.stringify(error));
+        }
+      })
+    } */
 
 }
