@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { navbarData } from './nav-header';
 
 @Component({
@@ -8,11 +9,14 @@ import { navbarData } from './nav-header';
 })
 export class HeaderNavComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router,) { }
 
   ngOnInit(): void {
   }
-
   navData = navbarData;
+
+  closeSession = () => {
+    this.router.navigate(['/']);
+  }
 
 }
