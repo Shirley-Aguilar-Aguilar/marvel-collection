@@ -1,19 +1,18 @@
-
 .HomeContainer {
   height: 100vh;
   width: 100vw;
 }
-.navHome{
+.navHome {
   text-align: center;
   font-family: 'Alfa Slab One';
   font-size: 25px;
   background-color: black;
 }
-.navHome h1{
+.navHome h1 {
   color:rgba(230, 8, 8, 0.938);
   margin:0;
 }
-mat-toolbar{
+mat-toolbar {
   background-color:azure;
   display:flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@ mat-toolbar span a {
   text-decoration: none;
   margin:20%;
 }
-mat-toolbar span a:hover{
+mat-toolbar span a:hover {
   background-color:black;
   padding:10px;
   border-radius:10px;
@@ -54,7 +53,7 @@ mat-toolbar span a:hover{
   padding: 5%;
 }
 
-@media (min-width:1000px){
+@media (min-width:1000px) {
   .textAbout p {
     width: 30%;
     margin:10% 7%;
