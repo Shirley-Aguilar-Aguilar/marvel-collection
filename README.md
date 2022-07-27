@@ -1,27 +1,68 @@
-# HeroesMarvel
+# Reto Marvel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+![logomarvel.jpg](readme-img/logomarvel.jpg)
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Marvel es una de las más importantes editoriales de historietas estadounidenses a nivel mundial, es considerada la “casa de las ideas” , la cual nos brinda muchas historias, comics, series y personajes famosos desde sus inicios de producción.
+En esta página web encontrarás información sobre tus superheroes favoritos, comics y series del universo de Marvel. Disfrútalo. 
 
-## Code scaffolding
+## Historias de Usuarios y vista mobile
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Historia 1
 
-## Build
+- Como usuario quiero una vista que me brinde acceso a poder registrarme o iniciar sesión.
+- Como usuario quiero una vista que me muestre un resumen del contenido a mostrar.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  **Criterios de aceptación**
 
-## Running unit tests
+- Vista responsiva que muestre una opción para iniciar sesión o registrarme.
+- Vista responsiva que muestre un resumen del contenido.
+- Correo y contraseña deben ser validados en ambos formularios.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Untitled](readme-img/Untitled.png)
 
-## Running end-to-end tests
+### Historia 2
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Como usuario ya registrado quiero una vista que me permita iniciar sesión con mi correo y contraseña
+- Como usuario no registrado quiero una vista que me permita registrarme con mi correo y contraseña.
 
-## Further help
+  **Criterios de aceptación**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Vista responsiva que muestre un formulario para iniciar sesión.
+- Vista responsiva que muestre un formulario para registrarme.
+
+![Untitled](readme-img/Untitled%201.png)
+
+### Historia 3
+
+- Como usuario ya registrado quiero una vista que me permita ver los cómics.
+- Como usuario ya registrado quiero una vista que me permita ver los personajes.
+- Como usuario ya registrado quiero una vista que me permita ver los series.
+- Como usuario ya registrado quiero una vista que me permita ver las historias.
+
+  **Criterios de aceptación**
+
+- Vista que me permita ver los cómics.
+- Vista que me permita ver los personajes.
+- Vista que me permita ver las series.
+- Vista que me permita ver las historias.
+
+![Untitled](readme-img/Untitled%202.png)
+
+![Untitled](readme-img/Untitled%203.png)
+
+![Untitled](readme-img/Untitled%204.png)
+
+## Vista Desktop
+
+![Untitled](readme-img/Untitled%205.png)
+
+![Untitled](readme-img/Untitled%206.png)
+
+![Untitled](readme-img/Untitled%207.png)
+
+![Untitled](readme-img/Untitled%208.png)
+
+![Untitled](readme-img/Untitled%209.png)
+
