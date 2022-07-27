@@ -1,0 +1,9 @@
+<div class = "containerAllStories" >
+  <section class = "containerStories" *ngFor="let stories of arrayStories">
+    <h4>{{stories.originalIssue.name}}</h4>
+    <p>{{stories.title}}</p>
+    <div *ngFor="let url of stories.urls" >
+      <a class="urls" href="{{url.url}}">{{url.type}}</a>
+    </div>
+  </section>
+</div>

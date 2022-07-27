@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1 class="title">MARVEL COLLECTION</h1>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="navigation">
+    <nav>
+      <ul>
+          <li *ngFor="let data of navData">
+              <a [routerLink]="[data.routeLink]">
+                  <!--<i [class]="data.icon"></i>-->
+                  <span>{{data.label}}</span>
+              </a>
+          </li>
+      </ul>
+    </nav>
+    <mat-icon (click)="closeSession()">power_settings_new</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="container-content" >
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

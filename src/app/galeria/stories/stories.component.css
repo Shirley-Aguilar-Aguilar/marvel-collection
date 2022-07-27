@@ -1,0 +1,32 @@
+.containerAllStories{
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerStories{
+  background-color: rgba(255, 255, 255, 0.922);
+  width:40%;
+  margin:3%;
+  font-family: 'Alfa Slab One';
+  text-align: center;
+  padding:2%;
+}
+.urls{
+  text-decoration: none;
+  color:rgb(97, 97, 97)
+}
+.containerStories img{
+  width: 80%;
+ }
+
+@media (min-width:1000px){
+  .containerStories{
+    background-color: rgba(255, 255, 255, 0.922);
+    width:22%;
+    margin:3%;
+    font-family: 'Alfa Slab One';
+    text-align: center;
+  }
+}

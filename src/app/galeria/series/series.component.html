@@ -1,0 +1,9 @@
+<div class = "containerAllSeries" >
+  <section class = "containerSerie" *ngFor="let series of arraySeries">
+    <p>{{series.title}}</p>
+    <img class="imageCharacter" src="{{series.thumbnail.path}}.jpg{{credential}}">
+    <div *ngFor="let url of series.urls" >
+      <a class="urls" href="{{url.url}}">{{url.type}}</a>
+    </div>
+  </section>
+</div>
