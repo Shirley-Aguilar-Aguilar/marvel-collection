@@ -7,13 +7,12 @@
 }
 .containerCharacters{
   background-color: rgba(255, 255, 255, 0.922);
-  width:25%;
+  width:40%;
   margin:3%;
   font-family: 'Alfa Slab One';
   text-align: center;
 
 }
-
 .containerCharacters img{
  width: 80%;
 }
@@ -21,3 +20,13 @@
   text-decoration: none;
   color:rgb(97, 97, 97)
 }
+@media (min-width:1000px){
+  .containerCharacters{
+    background-color: rgba(255, 255, 255, 0.922);
+    width:25%;
+    margin:3%;
+    font-family: 'Alfa Slab One';
+    text-align: center;
+  }
+}
+
