@@ -12,22 +12,18 @@ export class SeriesComponent implements OnInit {
 
   constructor(private RestService:RestService) { }
 
-  ngOnInit(): void {
-    this.getAll('series')
-  }
+  ngOnInit(): void { this.getAll('series') }
+
   public getAll(route:string){
     this.RestService.getAll(route)
     .subscribe({
-     next: data => {
-      console.log("data get all");
-       console.log(data.data.results);
-       this.arraySeries=data.data.results;
-     },
-     error: error => {
-       console.log(error);
-     }
-    }
-    )
- }
+      next: data => {
+        this.arraySeries=data.data.results;
+      },
+      error: error => {
+        console.error(error);
+      }
+    })
+  }
 
 }

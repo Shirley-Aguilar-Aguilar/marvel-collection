@@ -7,11 +7,10 @@
 }
 .containerComic{
   background-color: rgba(255, 255, 255, 0.922);
-  width:25%;
+  width:40%;
   margin:3%;
   font-family: 'Alfa Slab One';
   text-align: center;
-
 }
 .urls{
   text-decoration: none;
@@ -20,4 +19,12 @@
 .containerComic img{
   width: 80%;
  }
-
+ @media (min-width:1000px){
+  .containerComic{
+    background-color: rgba(255, 255, 255, 0.922);
+    width:25%;
+    margin:3%;
+    font-family: 'Alfa Slab One';
+    text-align: center;
+  }
+}
