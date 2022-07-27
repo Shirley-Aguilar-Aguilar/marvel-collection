@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
-import {HttpClient,  HttpHeaders } from "@angular/common/http";
-import {Observable} from "rxjs";
-import {environment} from "../../../environments/environment";
-import {UserToLogin} from "../interfaces/user";
+import { Auth } from '@angular/fire/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from '@firebase/auth';
 
+@Injectable({
+  providedIn: 'root'
+})
 
 export class UserService {
-  constructor(private http: HttpClient) { }
-  token = sessionStorage.getItem('token');
+  constructor(private auth: Auth) { }
 
-    httpOptions = () => (
-    { headers: new HttpHeaders (
-        {
-          'Content-Type': 'application/json',
-          'access-token': `${this.token}`,
-        })
-    });
+  register({ email, password }: any ) {
+    return createUserWithEmailAndPassword(this.auth, email, password);
+  }
 
-  public login = (url:string, data:any) => this.http.post(`${environment.API_URI}/${url}`,data, this.httpOptions());
+  login({ email, password }: any ) {
+    return signInWithEmailAndPassword(this.auth, email, password);
+  }
+
 }
