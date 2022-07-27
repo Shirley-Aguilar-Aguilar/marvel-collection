@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'marvel-collection.firebaseapp.com',
     messagingSenderId: '570267597670',
   },
-  production: true
+  production: true,
+  urlApi: "https://gateway.marvel.com/v1/public/",
 };
