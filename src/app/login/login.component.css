@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-
-.loginContainer{
+.loginRegisterContainer {
   background: url("../../assets/fondo.jpg")  no-repeat center center;
   background-size: cover;
   width:100vw;
@@ -10,7 +8,7 @@
   justify-content:center;
   align-items: center;
 }
-.logoContainer{
+.logoContainer {
   background: url("../../assets/logomarvel.jpg")  no-repeat center center;
   background-size: cover;
   height: 180px;
@@ -19,24 +17,21 @@
   background-color: black;
   margin:0% auto;
 }
-
-.formContainer{
+.formContainer {
     background-color: rgba(238, 234, 234, 0.911);
     position: relative;
-    padding: 50px;
+    padding: 30px 40px;
     border-radius: 20px;
     border:3px solid rgb(14, 13, 13);
     box-shadow:3px 3px 3px 3px rgb(114, 33, 33);
     text-align: center;
     font-family: 'Alfa Slab One';
 }
-
 input.example-right-align::-webkit-outer-spin-button,
 input.example-right-align::-webkit-inner-spin-button {
     display: none;
 }
-
-.buttonSent{
+.buttonSent {
  border:0;
  background-color: rgba(20, 19, 19, 0.89);
  color:white;
@@ -45,9 +40,14 @@ input.example-right-align::-webkit-inner-spin-button {
  margin:10px;
  font-size: medium;
  font-family: 'Alfa Slab One';
+ width: 80%;
 }
-
-.buttonBack{
+.buttonSent:hover {
+  border:0;
+  background-color:brown;
+  color:black;
+ }
+.buttonBack {
   color:black;
   background-color: white;
   font-size: larger;
@@ -55,12 +55,29 @@ input.example-right-align::-webkit-inner-spin-button {
   margin:10%;
   border-radius: 10px;
   padding:7px 10px;
+  width: 100%;
 }
-.registerContainer{
-  display:flex;
+::ng-deep .mat-tab-label-content {
+  color:black !important;
+  font-family: 'Alfa Slab One' !important;
+  font-size: medium;
+}
+::ng-deep .mat-tab-body-content {
+  display:flex !important;
   flex-direction: column;
+  align-items: center;
 }
-
+::ng-deep mat-label {
+  color:black;
+  font-family: 'Alfa Slab One';
+}
+.messageError {
+  color:red;
+  font-size: 13px;
+  border-radius:5px;
+  width:fit-content;
+  font-family: 'Alfa Slab One';
+}
 @media (min-width:1000px){
   .buttonBack{
     font-size: 25px;
